@@ -1,16 +1,21 @@
-# toimage
+# :pencil2: To Image - Tira print do seu widget
 
-A new Flutter project.
+Este aplicativo foi criado com o objetivo de demonstrar como capturar a tela ou um widget específico no Flutter. Com esta ferramenta, você aprenderá a tirar screenshots de maneira eficiente e precisa em seus projetos Flutter
 
-## Getting Started
+## :heavy_check_mark: Telas do projeto (Unica Tela de Home)
+<center>
 
-This project is a starting point for a Flutter application.
+![Screenshot](./demo.gif)
+</center>
 
-A few resources to get you started if this is your first Flutter project:
+## :computer: Tecnologias, APIs, Packages utilizados:
+  
+  * Flutter / Dart
+  * VSCode IDE
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+# :iphone: Testes em Plataformas Android e IOS
+
+  - Fiz somente testes em Plataforma Android por não ter o ambiente de testes em IOS que fica restrito em ter um MacOS ao qual ainda não possuo.
+
