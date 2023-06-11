@@ -3,10 +3,11 @@
 Este aplicativo foi criado com o objetivo de demonstrar como capturar a tela ou um widget específico no Flutter. Com esta ferramenta, você aprenderá a tirar screenshots de maneira eficiente e precisa em seus projetos Flutter
 
 ## :heavy_check_mark: Telas do projeto (Unica Tela de Home)
-<center>
+<div style="display: flex; justify-content: center; align-items: center;">
 
 ![Screenshot](./demo.gif)
-</center>
+
+</div>
 
 ## :computer: Tecnologias, APIs, Packages utilizados:
   
