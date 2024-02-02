@@ -37,11 +37,6 @@ class _MyHomePageState extends State<MyHomePage>
   final GlobalKey _genKey = GlobalKey();
 
   @override
-  void initState() {
-    super.initState();
-  }
-
-  @override
   Widget build(BuildContext context) {
     return RepaintBoundary(
       key: _genKey,
