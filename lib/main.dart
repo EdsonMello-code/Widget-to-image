@@ -7,7 +7,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key, required this.title}) : super(key: key);
+  const MyHomePage({super.key, required this.title});
 
   final String title;
 
@@ -34,7 +34,7 @@ class _MyHomePageState extends State<MyHomePage>
     with ImageMixin, SnackBarMixin {
   final int _counter = 0;
 
-  final GlobalKey genKey = GlobalKey();
+  final GlobalKey _genKey = GlobalKey();
 
   @override
   void initState() {
@@ -44,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage>
   @override
   Widget build(BuildContext context) {
     return RepaintBoundary(
-      key: genKey,
+      key: _genKey,
       child: Scaffold(
         body: Center(
           child: Column(
@@ -58,22 +58,21 @@ class _MyHomePageState extends State<MyHomePage>
                 style: Theme.of(context).textTheme.headlineMedium,
               ),
               ElevatedButton(
-                  onPressed: () async {
-                    setState(() async {
-                      final imagePath = await takePicture(genKey);
+                onPressed: () async {
+                  setState(() async {
+                    final imagePath = await takePicture(_genKey);
 
-                      if (!mounted) return;
-                      showSnackBarTop(
-                        context,
-                        text: 'Imagem salva em $imagePath',
-                      );
-                    });
-                  },
-                  child: const Text(
-                    "Take Picture",
-                  )),
-
-              // _buildStatePhotoPage(state)
+                    if (!mounted) return;
+                    showSnackBarTop(
+                      context,
+                      text: 'Imagem salva em $imagePath',
+                    );
+                  });
+                },
+                child: const Text(
+                  "Take Picture",
+                ),
+              ),
             ],
           ),
         ),
